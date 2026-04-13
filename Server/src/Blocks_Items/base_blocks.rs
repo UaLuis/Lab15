@@ -25,16 +25,9 @@ pub fn get_block_data(block: &str) -> Vec<&str> {
     data_block
 }
 
-
-pub fn get_bloks_list() -> Vec<Block<'static>> {
-    let list_blocks = create_block();
-
-    list_blocks
-}
-
 fn create_block() -> Vec<Block<'static>> {
     vec![
-        Block { name: "ground", texture: "Base_blocks/ground.png", item_for_break: "shovel" },
+        Block { name: "ground", texture: "Base_blocks/ground.png", item_for_break: "axe" },
         Block { name: "stone",  texture: "Base_blocks/stone.png",  item_for_break: "pick"   },
         Block { name: "prapor", texture: "Base_blocks/prapor.png", item_for_break: "hand"   },
     ]

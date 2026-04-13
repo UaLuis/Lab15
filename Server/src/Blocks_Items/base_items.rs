@@ -25,16 +25,10 @@ pub fn get_item_data(item: &str) -> Vec<&str> {
     data_items
 }
 
-pub fn get_items_list() -> Vec<Item<'static>> {
-    let list_items = create_items();
-    
-    list_items
-}
-
 fn create_items() -> Vec<Item<'static>> {
     vec![
-        Item { name: "axe", texture: "axe.png", description: "Для деревини" },
-        Item { name: "pickaxe",  texture: "pickaxe.png",  description: "For stones"   },
-        Item { name: "lighter", texture: "lighter.png", description: "For... Boooooo:)"   },
+        Item { name: "axe", texture: "Base_items/axe.png", description: "Для деревини" },
+        Item { name: "pick",  texture: "Base_items/pick.png",  description: "For stones"   },
+        Item { name: "lighter", texture: "Base_items/lighter.png", description: "For... Boooooo:)"   },
     ]
 }
