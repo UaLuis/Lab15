@@ -1,0 +1,16 @@
+[package]
+name = "Client"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde_json = "1.0.149"
+mylib = { path = "../mylib" }
+mynet = { path = "../mynet"}
+
+[dependencies.serde]
+version = "1.0.228"
+features = ["derive"]
+
+[lints.rust]
+unused = "allow"
